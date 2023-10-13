@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Business Expenses</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="static/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <span class="d-none d-lg-block">CostVisualizer</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="navbar navbar-expand">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <span class="d-none d-md-block dropdown-toggle ps-2">A. Pawshe</span>
+          </a><!-- End Profile Image Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Adarsh Pawshe</h6>
+              <span>Data Scientist</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+      </ul>
+    </div>
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Overview</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#viz1685888708111">
+              <i class="bi bi-circle"></i><span>Dashboard 1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685888981195">
+              <i class="bi bi-circle"></i><span>Dashboard 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685889114509">
+              <i class="bi bi-circle"></i><span>Dashboard 3</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Story</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#viz1685890046955">
+              <i class="bi bi-circle"></i><span>Story 1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685890175073">
+              <i class="bi bi-circle"></i><span>Story 2</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Visualizations</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#viz1685904271987">
+              <i class="bi bi-circle"></i><span>Annual Pay Roll</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685904525275">
+              <i class="bi bi-circle"></i><span>Comparison(Contract Vs Labour)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685904642705">
+              <i class="bi bi-circle"></i><span>Equipment Costs</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685904788688">
+              <i class="bi bi-circle"></i><span>Advertisement Cost</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685905002435">
+              <i class="bi bi-circle"></i><span>Power Expenditure</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685905157081">
+              <i class="bi bi-circle"></i><span>Transportation</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685905284802">
+              <i class="bi bi-circle"></i><span>Taxes & Licenses</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685906800594">
+              <i class="bi bi-circle"></i><span>Fuel</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685905663085">
+              <i class="bi bi-circle"></i><span>Insurance vs Pension</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685905801202">
+              <i class="bi bi-circle"></i><span>Expenses YoY</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685905916546">
+              <i class="bi bi-circle"></i><span>Operating Expenses</span>
+            </a>
+          </li>
+          <li>
+            <a href="#viz1685906173672">
+              <i class="bi bi-circle"></i><span>Maintenance</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Overview</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            <!-- Sales Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard </h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-layout-text-sidebar-reverse"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>3</h6>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+            <!-- Revenue Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Stories </h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>2</h6>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Revenue Card -->
+
+            <!-- Customers Card -->
+            <div class="col-xxl-4 col-xl-12">
+
+              <div class="card info-card customers-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Visualizations</h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>12</h6>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Customers Card -->
+
+            <!-- Reports 1 -->
+            <div class="col-12">
+                  <h5 class="card-title">Dashboard <span> : 1 </span></h5>
+
+                  <!-- Line Chart -->
+                  <div class="tableauPlaceholder" id="viz1685888708111" style="position: relative">
+                    <noscript>
+                      <a href="#">
+                        <img alt="Expense Breakdown: Insights into Diverse Business Costs" src="https://public.tableau.com/static/images/Bu/Business_Expenses/ExpenseBreakdown/1_rss.png" style="border: none" />
+                      </a>
+                    </noscript>
+                    <object class="tableauViz" style="display:none;">
+                      <param name="host_url" value="https://public.tableau.com/" />
+                      <param name="embed_code_version" value="3" />
+                      <param name="site_root" value="" />
+                      <param name="name" value="Business_Expenses/ExpenseBreakdown" />
+                      <param name="tabs" value="no" />
+                      <param name="toolbar" value="yes" />
+                      <param name="static_image" value="https://public.tableau.com/static/images/Bu/Business_Expenses/ExpenseBreakdown/1.png" />
+                      <param name="animate_transition" value="yes" />
+                      <param name="display_static_image" value="yes" />
+                      <param name="display_spinner" value="yes" />
+                      <param name="display_overlay" value="yes" />
+                      <param name="display_count" value="yes" />
+                      <param name="language" value="en-US" />
+                      <param name="filter" value="publish=yes" />
+                    </object>
+                  </div>
+                  <script type="text/javascript">
+                    var divElement = document.getElementById('viz1685888708111');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                      vizElement.style.width = '1000px';
+                      vizElement.style.height = '827px';
+                    } else if (divElement.offsetWidth > 500) {
+                      vizElement.style.width = '1000px';
+                      vizElement.style.height = '827px';
+                    } else {
+                      vizElement.style.width = '100%';
+                      vizElement.style.height = '1277px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                  </script>
+                  <!-- End Line Chart -->
+
+            </div>
+            <!-- End Reports 1 -->
+
+
+
+             <!-- Reports 2 -->
+             <div class="col-12">
+                  <h5 class="card-title">Dashboard <span> : 2 </span></h5>
+
+                  <!-- Line Chart -->
+                  <div class="tableauPlaceholder" id="viz1685888981195" style="position: relative">
+                    <noscript>
+                      <a href="#">
+                        <img alt="Business Expenditure Overview" src="https://public.tableau.com/static/images/Bu/Business_Expenses/BusinessExpenditure/1_rss.png" style="border: none" />
+                      </a>
+                    </noscript>
+                    <object class="tableauViz" style="display:none;">
+                      <param name="host_url" value="https://public.tableau.com/" />
+                      <param name="embed_code_version" value="3" />
+                      <param name="site_root" value="" />
+                      <param name="name" value="Business_Expenses/BusinessExpenditure" />
+                      <param name="tabs" value="no" />
+                      <param name="toolbar" value="yes" />
+                      <param name="static_image" value="https://public.tableau.com/static/images/Bu/Business_Expenses/BusinessExpenditure/1.png" />
+                      <param name="animate_transition" value="yes" />
+                      <param name="display_static_image" value="yes" />
+                      <param name="display_spinner" value="yes" />
+                      <param name="display_overlay" value="yes" />
+                      <param name="display_count" value="yes" />
+                      <param name="language" value="en-US" />
+                      <param name="filter" value="publish=yes" />
+                    </object>
+                  </div>
+                  <script type="text/javascript">
+                    var divElement = document.getElementById('viz1685888981195');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                      vizElement.style.width = '1000px';
+                      vizElement.style.height = '827px';
+                    } else if (divElement.offsetWidth > 500) {
+                      vizElement.style.width = '1000px';
+                      vizElement.style.height = '827px';
+                    } else {
+                      vizElement.style.width = '100%';
+                      vizElement.style.height = '1277px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                  </script>
+                  <!-- End Line Chart -->
+
+            </div>
+            <!-- End Reports 2 -->
+
+
+            <!-- Reports 3 -->
+            <div class="col-12">
+                  <h5 class="card-title">Dashboard <span> : 3 </span></h5>
+
+                  <!-- Line Chart -->
+                  <div class="tableauPlaceholder" id="viz1685889114509" style="position: relative">
+                    <noscript>
+                      <a href="#">
+                        <img alt="Expense Insights" src="https://public.tableau.com/static/images/Bu/Business_Expenses/ExpenseInsights/1_rss.png" style="border: none" />
+                      </a>
+                    </noscript>
+                    <object class="tableauViz" style="display:none;">
+                      <param name="host_url" value="https://public.tableau.com/" />
+                      <param name="embed_code_version" value="3" />
+                      <param name="site_root" value="" />
+                      <param name="name" value="Business_Expenses/ExpenseInsights" />
+                      <param name="tabs" value="no" />
+                      <param name="toolbar" value="yes" />
+                      <param name="static_image" value="https://public.tableau.com/static/images/Bu/Business_Expenses/ExpenseInsights/1.png" />
+                      <param name="animate_transition" value="yes" />
+                      <param name="display_static_image" value="yes" />
+                      <param name="display_spinner" value="yes" />
+                      <param name="display_overlay" value="yes" />
+                      <param name="display_count" value="yes" />
+                      <param name="language" value="en-US" />
+                      <param name="filter" value="publish=yes" />
+                    </object>
+                  </div>
+                  <script type="text/javascript">
+                    var divElement = document.getElementById('viz1685889114509');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                      vizElement.style.width = '1000px';
+                      vizElement.style.height = '827px';
+                    } else if (divElement.offsetWidth > 500) {
+                      vizElement.style.width = '1000px';
+                      vizElement.style.height = '827px';
+                    } else {
+                      vizElement.style.width = '100%';
+                      vizElement.style.height = '1277px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                  </script>
+                  <!-- End Line Chart -->
+
+            </div>
+            <!-- End Reports 3 -->
+
+            <!-- Recent Sales 1 -->
+            <div class="col-12">
+                  <h5 class="card-title">Story <span> : 1 </span></h5>
+
+                  <!-- Line Chart -->
+                  <div class="tableauPlaceholder" id="viz1685890046955" style="position: relative">
+                    <noscript>
+                      <a href="#">
+                        <img alt="Expenses 1" src="https://public.tableau.com/static/images/Bu/Business_Expenses/Expenses1/1_rss.png" style="border: none" />
+                      </a>
+                    </noscript>
+                    <object class="tableauViz" style="display:none;">
+                      <param name="host_url" value="https://public.tableau.com/" />
+                      <param name="embed_code_version" value="3" />
+                      <param name="site_root" value="" />
+                      <param name="name" value="Business_Expenses/Expenses1" />
+                      <param name="tabs" value="no" />
+                      <param name="toolbar" value="yes" />
+                      <param name="static_image" value="https://public.tableau.com/static/images/Bu/Business_Expenses/Expenses1/1.png" />
+                      <param name="animate_transition" value="yes" />
+                      <param name="display_static_image" value="yes" />
+                      <param name="display_spinner" value="yes" />
+                      <param name="display_overlay" value="yes" />
+                      <param name="display_count" value="yes" />
+                      <param name="language" value="en-US" />
+                      <param name="filter" value="publish=yes" />
+                    </object>
+                  </div>
+                  <script type="text/javascript">
+                    var divElement = document.getElementById('viz1685890046955');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '1016px';
+                    vizElement.style.height = '991px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                  </script>
+                  <!-- End Line Chart -->
+
+            
+            </div>
+            <!-- End Recent Sales 1-->
+
+            <!-- Recent Sales 2 -->
+            <div class="col-12">
+                
+                  <h5 class="card-title">Story <span> : 2 </span></h5>
+                
+                  <!-- Line Chart -->
+                  <div class="tableauPlaceholder" id="viz1685890175073" style="position: relative">
+                    <noscript>
+                      <a href="#">
+                        <img alt="Expenses 2" src="https://public.tableau.com/static/images/Bu/Business_Expenses/Expenses2/1_rss.png" style="border: none" />
+                      </a>
+                    </noscript>
+                    <object class="tableauViz" style="display:none;">
+                      <param name="host_url" value="https://public.tableau.com/" />
+                      <param name="embed_code_version" value="3" />
+                      <param name="site_root" value="" />
+                      <param name="name" value="Business_Expenses/Expenses2" />
+                      <param name="tabs" value="no" />
+                      <param name="toolbar" value="yes" />
+                      <param name="static_image" value="https://public.tableau.com/static/images/Bu/Business_Expenses/Expenses2/1.png" />
+                      <param name="animate_transition" value="yes" />
+                      <param name="display_static_image" value="yes" />
+                      <param name="display_spinner" value="yes" />
+                      <param name="display_overlay" value="yes" />
+                      <param name="display_count" value="yes" />
+                      <param name="language" value="en-US" />
+                      <param name="filter" value="publish=yes" />
+                    </object>
+                  </div>
+                  <script type="text/javascript">
+                    var divElement = document.getElementById('viz1685890175073');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '1016px';
+                    vizElement.style.height = '991px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                  </script>
+                  <!-- End Line Chart -->
+            
+            </div>
+            <!-- End Recent Sales 2-->
+
+
+            <!-- Recent Sales 3 -->
+            <div class="col-12">
+                
+              <h5 class="card-title">Visualization <span> : 1 </span></h5>
+            
+              <!-- Line Chart -->
+              <div class='tableauPlaceholder' id='viz1685904271987' style='position: relative'>
+                <noscript>
+                  <a href='#'><img alt='Annual Pay Roll ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;AnnualPayRoll&#47;1_rss.png' style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                  <param name='embed_code_version' value='3' />
+                  <param name='site_root' value='' />
+                  <param name='name' value='Business_Expenses&#47;AnnualPayRoll' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;AnnualPayRoll&#47;1.png' />
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='language' value='en-US' />
+                  <param name='filter' value='publish=yes' />
+                </object>
+              </div>
+              <script type='text/javascript'>
+                var divElement = document.getElementById('viz1685904271987');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+              <!-- End Line Chart -->
+        
+        </div>
+        <!-- End Recent Sales 3-->
+
+        <!-- Recent Sales 4 -->
+        <div class="col-12">
+                
+          <h5 class="card-title">Visualization <span> : 2 </span></h5>
+        
+          <!-- Line Chart -->
+          <div class='tableauPlaceholder' id='viz1685904525275' style='position: relative'>
+            <noscript>
+              <a href='#'><img alt='Contract Labour vs Employee ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Comparison&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='Business_Expenses&#47;Comparison' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Comparison&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-US' />
+              <param name='filter' value='publish=yes' />
+            </object>
+          </div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1685904525275');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+          <!-- End Line Chart -->
+    
+    </div>
+    <!-- End Recent Sales 4-->
+
+    <!-- Recent Sales 5 -->
+    <div class="col-12">
+                
+      <h5 class="card-title">Visualization <span> : 3 </span></h5>
+    
+      <!-- Line Chart -->
+      <div class='tableauPlaceholder' id='viz1685904642705' style='position: relative'>
+        <noscript>
+          <a href='#'><img alt='Equipment Costs ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;EquipmentCosts&#47;1_rss.png' style='border: none' /></a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Business_Expenses&#47;EquipmentCosts' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;EquipmentCosts&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1685904642705');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+      
+      <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 5-->
+
+<!-- Recent Sales 6 -->
+<div class="col-12">
+                
+  <h5 class="card-title">Visualization <span> : 4 </span></h5>
+
+  <!-- Line Chart -->
+  <div class='tableauPlaceholder' id='viz1685904788688' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Advertisment Cost ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;AdvertisementCosts&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Business_Expenses&#47;AdvertisementCosts' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;AdvertisementCosts&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1685904788688');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
+  <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 6-->
+
+
+
+<!-- Recent Sales 8 -->
+<div class="col-12">
+                
+  <h5 class="card-title">Visualization <span> : 5 </span></h5>
+
+  <!-- Line Chart -->
+  <div class='tableauPlaceholder' id='viz1685905002435' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Power Expenditure' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Power&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Business_Expenses&#47;Power' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Power&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1685905002435');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
+  <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 8-->
+
+<!-- Recent Sales 9 -->
+<div class="col-12">
+                
+  <h5 class="card-title">Visualization <span> : 6 </span></h5>
+
+  <!-- Line Chart -->
+  <div class='tableauPlaceholder' id='viz1685905157081' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Transportation and Warehousing' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Transportation&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Business_Expenses&#47;Transportation' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Transportation&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1685905157081');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
+  <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 9-->
+
+<!-- Recent Sales 10 -->
+<div class="col-12">
+                
+  <h5 class="card-title">Visualization <span> : 7 </span></h5>
+
+  <!-- Line Chart -->
+  <div class='tableauPlaceholder' id='viz1685905284802' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Taxes & Licenses' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Taxes&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Business_Expenses&#47;Taxes' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Taxes&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1685905284802');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
+  <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 10-->
+
+<!-- Recent Sales 11 -->
+<div class="col-12">
+                
+  <h5 class="card-title">Visualization <span> : 8 </span></h5>
+
+  <!-- Line Chart -->
+  <div class='tableauPlaceholder' id='viz1685905663085' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Employee Costs (Insurance Vs Pension)' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Insurancevspension&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Business_Expenses&#47;Insurancevspension' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Insurancevspension&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1685905663085');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
+  <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 11-->
+
+<!-- Recent Sales 12 -->
+<div class="col-12">
+                
+  <h5 class="card-title">Visualization <span> : 9 </span></h5>
+
+  <!-- Line Chart -->
+  <div class='tableauPlaceholder' id='viz1685905801202' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Expenses YoY' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;ExpensesYoY&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Business_Expenses&#47;ExpensesYoY' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;ExpensesYoY&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1685905801202');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
+  <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 12-->
+
+<!-- Recent Sales 13 -->
+<div class="col-12">
+                
+  <h5 class="card-title">Visualization <span> : 10 </span></h5>
+
+  <!-- Line Chart -->
+  <div class='tableauPlaceholder' id='viz1685905916546' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Operating Expenses' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;OperatingExpenses&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Business_Expenses&#47;OperatingExpenses' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;OperatingExpenses&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1685905916546');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
+  <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 13-->
+
+<!-- Recent Sales 14 -->
+<div class="col-12">
+                
+  <h5 class="card-title">Visualization <span> : 11 </span></h5>
+
+  <!-- Line Chart -->
+  <div class='tableauPlaceholder' id='viz1685906173672' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Maintenance of buildings' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;maintenance&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Business_Expenses&#47;maintenance' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;maintenance&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1685906173672');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
+  <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 14-->
+
+<!-- Recent Sales 15 -->
+<div class="col-12">
+                
+  <h5 class="card-title">Visualization <span> : 12 </span></h5>
+
+  <!-- Line Chart -->
+  <div class='tableauPlaceholder' id='viz1685906800594' style='position: relative'>
+    <noscript>
+      <a href='#'><img alt='Fuel' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Fuel&#47;1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Business_Expenses&#47;Fuel' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;Business_Expenses&#47;Fuel&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1685906800594');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
+  
+  <!-- End Line Chart -->
+
+</div>
+<!-- End Recent Sales 15-->
+
+
+
+      
+          </div>
+        </div><!-- End Left side columns -->
+
+        
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>CostVisualizer</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">Adarsh Pawshe</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/chart.js/chart.umd.js"></script>
+  <script src="static/vendor/echarts/echarts.min.js"></script>
+  <script src="static/vendor/quill/quill.min.js"></script>
+  <script src="static/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="static/vendor/tinymce/tinymce.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
